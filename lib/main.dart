@@ -1,4 +1,5 @@
-import 'package:commerce_app/screens/signup.dart';
+import 'package:commerce_app/screens/login.dart';
+// import 'package:commerce_app/screens/signup.dart';
 import 'package:flutter/material.dart';
 
 void main() {
@@ -12,8 +13,13 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      debugShowCheckedModeBanner: false,
-      home: SignUp(),
+      theme: ThemeData(
+        primaryColor: Color(0xffaf7373),
+        scaffoldBackgroundColor: Colors.white,
+        visualDensity: VisualDensity.adaptivePlatformDensity,
+      ),
+      // debugShowCheckedModeBanner: false,
+      home: Login(),
     );
   }
 }
